@@ -18,12 +18,21 @@ $cb33: #FFB4F6
 
 .cta_carousel_block
 	border-radius: 30px
+	margin-bottom: 50px
 
 	&.cta_carousel_lime
 		background-color: $cb11
 		background-image: url(../img/cta_bg_10.png)
 		background-position: bottom right
 		background-size: cover
+	&.cta_carousel_violet
+		background-color: $cb11
+		background-image: url(../img/cta_bg_10.png)
+	&.cta_carousel_pitch
+		background-color: $cb11
+		background-image: url(../img/cta_bg_10.png)
+
+	
 	.cta_carousel_block_wrapper
 		padding: 40px 60px
 		display: flex
@@ -46,23 +55,28 @@ $cb33: #FFB4F6
 			box-shadow: 0 3px 6px #00000033
 
 
-swiper-container
+swiper-container.cta_cards_slider
 	width: 240px
 	height: 320px
 
-swiper-slide
-	display: flex
-	align-items: center
-	justify-content: center
-	border-radius: 18px
-	font-size: 22px
-	font-weight: bold
-	color: #fff
+	.swiper-button-prev, .swiper-button-next
+		color: green
+		svg path
+			fill: green
+
+	swiper-slide
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 18px
+		font-size: 22px
+		font-weight: bold
+		color: #fff
 
 .swiper-slide-shadow-cards
 	background-color: transparent !important
 
-.swiper_button_cta_prev .swiper_button_cta_next
+.SwiperSecond.swiper_button_cta_prev .swiper_button_cta_next
 	background-color: #fff
 	box-shadow: 0 3px 6px #00000033
 
