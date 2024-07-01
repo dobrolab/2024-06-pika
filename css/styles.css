@@ -6,6 +6,8 @@
   border-radius: 30px;
   margin-bottom: 50px;
   background-position: bottom right;
+  background-size: 920px;
+  background-repeat: no-repeat;
 }
 .cta_carousel_block.cta_carousel_lime {
   background-color: #DDFEF9;
@@ -22,8 +24,8 @@
   flex-direction: row;
 }
 .cta_carousel_block .cta_carousel_block_wrapper .cta_carousel_block_text .h3 {
-  color: #03065D;
   font-size: 40px;
+  color: #03065D;
   font-weight: bold;
 }
 .cta_carousel_block .cta_carousel_block_wrapper .cta_carousel_block_cards {
@@ -44,10 +46,7 @@ swiper-container.cta_cards_slider {
   height: 320px;
 }
 swiper-container.cta_cards_slider .swiper-button-prev, swiper-container.cta_cards_slider .swiper-button-next {
-  color: green;
-}
-swiper-container.cta_cards_slider .swiper-button-prev svg path, swiper-container.cta_cards_slider .swiper-button-next svg path {
-  fill: green;
+  background-color: #00FF00 !important;
 }
 swiper-container.cta_cards_slider swiper-slide {
   display: flex;
@@ -68,17 +67,32 @@ swiper-container.cta_cards_slider swiper-slide {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
+.swiper-button-prev, .swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: background-color 0.3s;
+}
+
 /* // LG */
 /* // MD */
 @media (max-width: 991px) {
   .cta_carousel_block .cta_carousel_block_wrapper {
-    padding: 40px 60px;
-    display: flex;
+    padding: 20px;
     flex-direction: column;
   }
   .cta_carousel_block .cta_carousel_block_wrapper .cta_carousel_block_cards {
     margin-left: auto;
     margin-right: auto;
+  }
+  .cta_carousel_block .cta_carousel_block_wrapper .cta_carousel_block_text .h3 {
+    font-size: 28px;
+    line-height: 140%;
   }
 }
 /* // SM */
