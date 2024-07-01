@@ -5,20 +5,16 @@
 .cta_carousel_block {
   border-radius: 30px;
   margin-bottom: 50px;
+  background-position: bottom right;
 }
 .cta_carousel_block.cta_carousel_lime {
   background-color: #DDFEF9;
-  background-image: url(../img/cta_bg_10.png);
-  background-position: bottom right;
-  background-size: cover;
 }
 .cta_carousel_block.cta_carousel_violet {
   background-color: #F4EFFC;
-  background-image: url(../img/cta_bg_10.png);
 }
 .cta_carousel_block.cta_carousel_pitch {
   background-color: #FFEAEF;
-  background-image: url(../img/cta_bg_10.png);
 }
 .cta_carousel_block .cta_carousel_block_wrapper {
   padding: 40px 60px;
