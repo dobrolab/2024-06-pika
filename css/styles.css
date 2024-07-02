@@ -85,6 +85,52 @@
   background-color: #FFB4F6 !important;
 }
 
+/* CARD */
+.cta_carousel_block_card {
+  font-family: "Montserrat", serif;
+}
+
+.cta_carousel_block_card {
+  width: 240px;
+  height: 320px;
+  background-color: #f9f9f9;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+  border-radius: 15px;
+}
+.cta_carousel_block_card .brand-count {
+  background-color: #00E8B6;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  width: 35px;
+  height: 35px;
+}
+.cta_carousel_block_card .inner-table-col:first-child img {
+  width: 75px;
+  height: 75px;
+}
+.cta_carousel_block_card .disclaimer {
+  font-size: 12px !important;
+  text-align: center;
+  color: #ccc;
+}
+
+/* CARD ADAPTIVE */
+/* // XXL */
+/* // XL */
+/* // LG */
+/* // MD */
+/* // SM */
+/* // XS */
+/* CARD: end */
 /* // LG */
 /* // MD */
 @media (max-width: 991px) {
