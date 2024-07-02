@@ -73,6 +73,18 @@
   color: #03065D;
 }
 
+.cta_carousel_lime .swiper_button_cta_prev, .cta_carousel_lime .swiper_button_cta_next {
+  background-color: #00E8B6 !important;
+}
+
+.cta_carousel_violet .swiper_button_cta_prev, .cta_carousel_violet .swiper_button_cta_next {
+  background-color: #CEB0FF !important;
+}
+
+.cta_carousel_pitch .swiper_button_cta_prev, .cta_carousel_pitch .swiper_button_cta_next {
+  background-color: #FFB4F6 !important;
+}
+
 /* // LG */
 /* // MD */
 @media (max-width: 991px) {
