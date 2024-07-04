@@ -3,15 +3,24 @@
 
 .cta_carousel_block_card
 	font-family: 'Montserrat', serif	
+	position: absolute
+	top: 0
+	left: 0
 
 .cta_carousel_block_card
 	width: 240px
 	height: 320px
-	background-color: #f9f9f9
+	margin-top: 15px
+	background-color: #fff
 	box-shadow: 0 3px 6px #00000033
 	padding: 20px
 	position: relative
 	border-radius: 15px
+	color: #333333
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	box-sizing: border-box
 
 	.brand-count
 		background-color: $cb13
@@ -27,49 +36,81 @@
 		width: 35px
 		height: 35px
 
-
 	.inner-table-col:first-child
 		img
 			width: 75px
 			height: 75px
 
-	.disclaimer
-		font-size: 12px !important
+	.brand-title
+		font-size: 20px
+		line-height: 22px
+		font-weight: 500
+		color: #000000
+		height: 68px
+		width: 100px
+		white-space: break-spaces
+		overflow: hidden
+
+	.brand-rank
+		color: #E69B45
+	.brand-rate
+		color: #999
+		font-size: 14px
+
+	.cta_carousel_block_row
+		margin-top: 5px
+		margin-bottom: 10px
+		display: flex
+		justify-content: space-between
+		gap: 15px
+	.cta_carousel_block_logo img
+		width: 80px
+
+	.cta_carousel_description
+		margin-top: auto
+		border-top: 1px solid #EBEBEB
+		padding-top: 5px
 		text-align: center
+		font-size: 14px
+		line-height: 18px
+		height: 60px
+		overflow: hidden
+		text-overflow: ellipsis
+		margin-bottom: 5px
+		.cta_carousel_title
+			font-weight: 600
+		.cta_carousel_subtitle
+			margin-bottom: 7px
+
+	.cta_carousel_btn
+		background-color: $cb13
+		color: $c1
+		border-color: transparent
+		box-shadow: 0 3px 6px #00000033
+		font-size: 15px
+		width: 100%
+		padding: 0.3rem 0.7rem
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.cta_carousel_disclaimer
+		font-size: 10px !important
+		line-height: 10px
+		text-align: center
+		margin-top: 10px
+		margin-bottom: 10px
 		color: #ccc
 
-/* CARD ADAPTIVE */
-
-/* // XXL */
-@media (max-width: 1679px)
-	#promo
-		//
-
-/* // XL */
-@media (max-width: 1439px) 
-	#promo
-		//
-
-/* // LG */
-@media (max-width: 1199px)
-	#promo
-		//
-
-/* // MD */
-@media (max-width: 991px) 
-	#promo
-		//
-
-/* // SM */
-@media (max-width: 767px)
-	#promo
-		//
-
-/* // XS */
-@media (max-width: 575px) 
-	#promo
-		//
-
+.cta_carousel_lime
+	.cta_carousel_btn, .brand-count
+		background-color: $cb13
+.cta_carousel_violet
+	.cta_carousel_btn, .brand-count
+		background-color: $cb23
+.cta_carousel_pitch
+	.cta_carousel_btn, .brand-count
+		background-color: $cb33
 
 /* CARD: end */
 
