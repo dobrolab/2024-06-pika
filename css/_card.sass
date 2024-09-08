@@ -15,7 +15,7 @@
 	box-shadow: 0 3px 6px #00000033
 	padding: 20px
 	position: relative
-	border-radius: 15px
+	border-radius: 10px
 	color: #333333
 	display: flex
 	flex-direction: column
@@ -25,7 +25,7 @@
 	.brand-count
 		background-color: $cb13
 		position: absolute
-		right: 20px
+		right: 25px
 		top: -15px
 		display: flex
 		justify-content: center
@@ -95,12 +95,15 @@
 		align-items: center
 
 	.cta_carousel_disclaimer
-		font-size: 10px !important
-		line-height: 10px
+		font-size: 12px !important
+		line-height: 12px
+		letter-spacing: -0.5px
 		text-align: center
-		margin-top: 10px
-		margin-bottom: 10px
+		margin-top: 20px
+		margin-bottom: 0
 		color: #ccc
+		margin-left: -10px
+		margin-right: -10px
 
 .cta_carousel_lime
 	.cta_carousel_btn, .brand-count
@@ -111,6 +114,14 @@
 .cta_carousel_pitch
 	.cta_carousel_btn, .brand-count
 		background-color: $cb33
+
+/* // XS */
+@media (max-width: 440px)
+	.cta_carousel_block
+		.cta_carousel_block_cards
+			transform: translateX(-40px)
+		.cta_carousel_block_text h3
+			font-size: 22px !important
 
 /* CARD: end */
 

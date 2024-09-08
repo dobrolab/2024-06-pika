@@ -16,6 +16,38 @@ $cb33: #FFB4F6
 .d-none
 	display: none !important
 
+body
+	min-width: 360px
+
+.home .site-content > .wrapper
+	padding-top: 30px
+
+.text-center
+	text-align: center !important
+
+.site-content details
+	margin-top: -10px
+.site-content details[open]
+	border-bottom: 0px
+
+.site-content summary
+	font-weight: bold
+	font-size: 14px
+	text-align: left
+	text-decoration: underline #00E8B6 4px
+	margin-bottom: 15px
+
+.entry-content
+	.wpb_wrapper ul
+		li
+			font-size: 16px
+
+.entry-content .cta_carousel_block
+	background-position: bottom right !important
+
+.site-main
+	font-size: 16px
+
 .cta_carousel_block
 	border-radius: 30px
 	margin-bottom: 50px
@@ -34,14 +66,17 @@ $cb33: #FFB4F6
 		padding: 40px 60px
 		display: flex
 		flex-direction: row
-		.cta_carousel_block_text
-			.h3
-				font-size: 40px
-				color: $c1
-				font-weight: bold
-		.cta_carousel_block_cards
-			width: 320px
-			flex-shrink: 0
+	.cta_carousel_block_text
+		h3, .h3
+			font-size: 30px !important
+			color: $c1
+			font-weight: bold
+			margin-bottom: 0 !important
+	.cta_carousel_block_cards
+		width: 320px
+		flex-shrink: 0
+		margin-left: auto
+		margin-right: auto
 
 
 
@@ -52,6 +87,7 @@ $cb33: #FFB4F6
 	.swiper-slide
 		// box-shadow: 0 3px 6px #00000033
 		border-radius: 20px
+		overflow: visible
 		img
 			width: 100%
 			display: inline-block
@@ -83,7 +119,11 @@ $cb33: #FFB4F6
 	.swiper_button_cta_prev, .swiper_button_cta_next
 		background-color: $cb33 !important
 
+
+
+
 @import _card
+@import _elements
 
 /* // LG */
 @media (max-width: 1199px)
@@ -100,12 +140,14 @@ $cb33: #FFB4F6
 				margin-right: auto
 			.cta_carousel_block_text
 				.h3
-					font-size: 28px
-					line-height: 140%
+					font-size: 28px !important
+					line-height: 140% !important
 
 /* // SM */
 @media (max-width: 767px)
-	//
+	.site-content .wrapper
+		padding-left: 0
+		padding-right: 0
 
 /* // XS */
 @media (max-width: 575px) 
